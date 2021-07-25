@@ -1,32 +1,106 @@
-*{margin: 1%; padding: 1%; box-sizing: border-box;}
-
-caption {
-    caption-side: top;
-    align: center; 
-  }
-button {position:relative; box-align: center;   }
-
-.content{display:flex; margin: auto;}
-
-.tabela-de-pacotes{width: 100%;text-align: center;}
-
-.tabela-pacotes{width: 100%; text-align: center;}
-    .tabela-pacotes thead{background: black; font-weight: bold; color:#fff; text-align: center;}
-    .tabela-pacotes tbody tr:nth-child(2n){background: #ccc;}
-    .tabela-pacotes th , .tabela-pacotes td{padding: 7px 0;font-size: larger;}
-
-@media screen and (max-width: 480px){
-    .content{width: 94%;font-size: larger;}
-
-    .tabela-pacotes thead{display:none;}
-    .tabela-pacotes tbody td{display: flex; flex-direction: column;font-size: larger;}
+body {
+  margin: auto;
 }
 
-@media only screen and (min-width: 1200px){
-    .content{width:100%;font-size: larger;}
-    .tabela-pacotes tbody tr td:nth-child(1){width:10%;font-size: larger;}
-    .tabela-pacotes tbody tr td:nth-child(2){width:30%;font-size: larger;}
-    .tabela-pacotes tbody tr td:nth-child(3){width:20%;font-size: larger;}
-    .tabela-pacotes tbody tr td:nth-child(4){width:10%;font-size: larger;}
-    .tabela-pacotes tbody tr td:nth-child(5){width:30%;font-size: larger;}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0px;
+
 }
+
+section .logo {
+    grid-column: 1/span 1;
+    grid-row: 1/span 1;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 50px;
+    
+}
+
+section .cabecalho {
+    grid-column: 2/span 5;
+    grid-row: 1/span 1;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0px;
+    padding-top: 10px;
+    
+}
+
+.thumbnail{
+    position:relative;
+
+}
+.details {
+    position: absolute; 
+    z-index: 2; 
+    top: 15px;
+    left: 5px;
+    right: 10px; ;
+    color: #0c0b0b;
+    font-size:larger; 
+}
+
+
+section .busca {
+    grid-column: 1/span 6;
+    grid-row: 2/span 1;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 10px;
+    left: 100px;
+    height: 60px;
+    }
+
+ section .links {
+    grid-column: 1/span 1;
+    grid-row: 3/span 2;
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+    margin: 0px;
+}
+
+section .miolo {
+    grid-column: 2/span 5;
+    grid-row: 3/span 2;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+section .cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+}
+
+section .contItem {
+    min-width: 160px;
+    min-height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+section .rodape {
+    grid-column: 1/span 6;
+    grid-row: 5/span 1;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0px;
+}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
